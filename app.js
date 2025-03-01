@@ -1,4 +1,3 @@
-let celsius = 10
-let f = celsius * 1.8 + 32
-
-console.log(f)
+const str= "frontend Simplified"
+for (let i = 0; i <= str.length; ++i)
+    console.log(str[i])
