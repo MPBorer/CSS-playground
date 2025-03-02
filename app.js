@@ -1,3 +1,5 @@
-const str= "frontend Simplified"
-for (let i = 0; i <= str.length; ++i)
-    console.log(str[i])
+let dollars = [1, 5, 10, 3]
+
+let cents = dollars.map(element => element * 100)
+
+console.log(cents)
