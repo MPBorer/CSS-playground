@@ -1,6 +1,13 @@
-*{background-color:red;
+/* *{background-color:red;
   color: black;
   box-sizing: border-box;
+} */
+
+.dark-theme{
+    background-color: black;
+    }
+.dark-theme * {
+    color: white;
 }
 
 .container{
@@ -21,4 +28,9 @@
 .box__small{
     height: 50px;
     width: 50px;
+}
+.title{
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 0 5px 5px;
 }
