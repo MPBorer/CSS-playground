@@ -1,14 +1,8 @@
-/* *{background-color:red;
+*{background-color:red;
   color: black;
   box-sizing: border-box;
-} */
-
-.dark-theme{
-    background-color: black;
-    }
-.dark-theme * {
-    color: white;
 }
+
 
 .container{
     display: flex;
