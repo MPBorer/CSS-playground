@@ -1,73 +1,39 @@
-let users = [
-    {
-        username: `Mike`,
-        email: `mike@gmail.com`,
-        password: `test123`,
-        subscriptionStatus: `vip`,
-        userid: `Mike123`,
-        lessonsCompleted: [0, 1, 2],
-    },
-    {
-        username: `Mitri`,
-        email: `mitri@gmail.com`,
-        password: `test123`,
-        subscriptionStatus: `vip`,
-        userid: `mitri123`,
-        lessonsCompleted: [0, 1, 2],
-    },
-    {
-        username: `zen`,
-        email: `zen@gmail.com`,
-        password: `test123`,
-        subscriptionStatus: `vip`,
-        userid: `zen123`,
-        lessonsCompleted: [0, 1, 2],
-    }
-]
-function login(email, password){
-    for (let i = 0; i < users.length; ++i){
-        if (users[i].email === email){
-            console.log(users[i]);
-            if (users[i].password === password){
-                console.log(`log the user in`);
-            }
-            else {
-                console.log(`password is incorrect- try again`)
-            }
-            return
-        }
-    }
-    console.log(`cant find a matching email- try again`)
+// document.querySelector(`.title`).innerHTML = `FES`
+
+// document.getElementById(`title`).innerHTML = `FES`
+
+
+// function changeTitleToGreen(){
+//       document.querySelector(`.title`).style.color = `green`
+// }
+
+function toggleDarkMode(){
+    document.querySelector(`body`).classList.toggle(`dark-theme`)
 }
-login(`mike@gmail.com`, `test123`)
 
+let celsius = 10;
+let farenheight = celsius * 1.8 + 32;
 
+console.log(farenheight);
 
+let cash = 45;
+let price = 40;
+let difference = cash - price;
 
-function register (
-    name,
-    email,
-    password,
-    subscriptionStatus,
-    userId,
-    lessonsCompleted
-){
-  
-    let user = {
-        username : name,
-        email: email,
-        password: password,
-        subscriptionStatus,
-        userId,
-        lessonsCompleted: lessonsCompleted
-    }
-    users.push(user)
+if (cash > price){
+    console.log(`you paid more than enough here is your ${difference} change`)
 }
-register(`zen`,
-     `zen@gmail.com`,
-      `test123`,
-       `vip`,
-        `zen123`,
-         [0, 1, 2]);
-         
-         console.log(users);
+else if (cash === price){
+    console.log(`you paid enough here is your receipt`)
+}
+else{
+    console.log(`you still owe ${difference * -1}`)
+}
+
+let val = "0"
+if (val){
+    console.log(!!val)
+}
+else{
+    console.log(!!val)
+}
